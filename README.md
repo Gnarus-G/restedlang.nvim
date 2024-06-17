@@ -7,7 +7,7 @@ Rested Syntax Highlighting and LSP setup for neovim
 ### [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use { 'gnarus-g/rested.nvim',
+use { 'gnarus-g/restedlang.nvim',
   requires = {
     { "nvim-treesitter/nvim-treesitter", "neovim/nvim-lspconfig" }
   },
