@@ -4,6 +4,17 @@ Rested Syntax Highlighting and LSP setup for neovim
 
 ## Usage
 
+### Requirements (tree-sitter-restedlang)
+
+[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/?tab=readme-ov-file#adding-parsers) has the full relevant instructions.
+
+#### Clone [this repo](https://github.com/Gnarus-G/tree-sitter-restedlang) into `~/projects/tree-sitter-restedlang/`
+
+```sh
+mkdir ~/projects/tree-sitter-todolang
+git clone https://github.com/Gnarus-G/tree-sitter-restedlang ~/projects/tree-sitter-restedlang
+```
+
 ### [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
