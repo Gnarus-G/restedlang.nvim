@@ -19,6 +19,8 @@
  "="
 ] @operator
 
+(attribute) @attribute
+
 (constant_identifier) @constant
 
 (call (identifier) @function)
