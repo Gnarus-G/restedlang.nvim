@@ -24,6 +24,7 @@ local configs = require 'lspconfig.configs'
 
 if not configs.rstdls then
   configs.rstdls = {
+    ---@type lspconfig.Config
     default_config = {
       cmd = { "rstd", "lsp" },
       single_file_support = true,
@@ -32,3 +33,5 @@ if not configs.rstdls then
     },
   }
 end
+
+require "restedlang.command_handler".setup()
