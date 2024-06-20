@@ -52,7 +52,7 @@ return {
   create_window = function()
     local buf = vim.api.nvim_create_buf(false, true)
     local win = vim.api.nvim_open_win(buf, true, get_window_options())
-    vim.api.nvim_buf_set_option(buf, "filetype", "json")
+    vim.api.nvim_buf_set_option(buf, "filetype", "markdown")
     return buf, win
   end,
   write_to_buffer = write_to_buffer
