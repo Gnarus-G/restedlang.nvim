@@ -26,6 +26,15 @@ require("lspconfig").rstdls.setup({
 })
 ```
 
+### Codelens
+
+The language supports codelenses for running the request on the cursor's line.
+Make sure a keymap set up for running codelenses, e.g:
+
+```lua
+vim.keymap.set('n', '<leader>lr', vim.lsp.codelens.run, opts)
+```
+
 ## Dev References
 
 https://neovim.io/doc/user/lsp.html#lsp-handler  
