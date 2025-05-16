@@ -26,4 +26,6 @@ vim.lsp.config("rstdls", {
   filetypes = { "restedlang" },
 })
 
+vim.lsp.enable("rstdls")
+
 require "restedlang.command_handler".setup()
