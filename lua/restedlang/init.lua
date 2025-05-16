@@ -19,19 +19,11 @@ vim.filetype.add({
 })
 
 -- LSP setup
-local nvim_lsp = require("lspconfig");
-local configs = require 'lspconfig.configs'
-
-if not configs.rstdls then
-  configs.rstdls = {
-    ---@type lspconfig.Config
-    default_config = {
-      cmd = { "rstd", "lsp" },
-      single_file_support = true,
-      root_dir = nvim_lsp.util.root_pattern(".env.rd.json"),
-      filetypes = { "restedlang" },
-    },
-  }
-end
+vim.lsp.config("rstdls", {
+  cmd = { "rstd", "lsp" },
+  single_file_support = true,
+  root_markers = { ".env.rd.json" },
+  filetypes = { "restedlang" },
+})
 
 require "restedlang.command_handler".setup()
